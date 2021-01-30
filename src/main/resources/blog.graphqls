@@ -1,0 +1,20 @@
+schema{
+query: Query
+}
+
+type Query{
+
+getAllBlog : [Blog]
+findBlogByAuthor(author: String) : [Blog]
+findBlogByTitle(title: String) : Blog
+}
+
+type Blog{
+
+id: String
+title: String
+author: String
+content: String
+tags: [String]
+
+}
